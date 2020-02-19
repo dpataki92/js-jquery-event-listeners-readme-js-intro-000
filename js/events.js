@@ -7,18 +7,18 @@ function getIt () {
 
 function frameIt () {
   $('img').on('load', function () {
-    $('img').addClass('.tasty');
+    $('img').addClass('tasty');
   })
 }
 
 function pressIt () {
-  $('input').on('keydown', function (e) {
+  $(document).on('keydown', function (e) {
     if (e.key === 'G') {alert('you pressed G!')}
   })
 }
 
 function submitIt () {
-  $("input[type='submit']").on('click', function() {
+  $("form").on('submit', function() {
     alert("Your form is going to be submitted now.");
   })
 }
